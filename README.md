@@ -38,8 +38,8 @@ SELECT icd.description, COUNT(*) cases
 FROM medical_records mr JOIN icd_codes icd 
 ON mr.diagnosis_code = icd.code 
 GROUP BY icd.description;
-```
-###Security Implementation
+
+Security Implementation
 Automatic Audit Logging:
 
 INSERT prescription → audit_log records INSERT
@@ -50,16 +50,19 @@ RBAC Roles:
 
 doctor_user → Read-only + INSERT medical_records/prescriptions
 admin_user  → Full access
-###AI/ML Readiness
+
+AI/ML Readiness
 Feature	ML Use Case
 ICD-10 codes	Disease classification
 Timestamps	Time-series prediction
 Symptoms text	NLP symptom extraction
 Lab results	Predictive modeling
-###Project Stats
+
+Project Stats
 Tables: 7 | Records: 30+ | Triggers: 3 | Views: 1 | Tests: 20+
 Grade: A | University DBMS Course 2026
-##Run Order
+
+Run Order
 	File	             Purpose
 1	healthcare_db.sql	Core schema + sample data
 2	audit_trigger.sql	Security logging
@@ -67,5 +70,6 @@ Grade: A | University DBMS Course 2026
 4	security_roles.sql	Doctor/Admin users
 5	test_queries.sql	Validation + demos
 
-Built by [Khadeejah Yasin]
+```
+Built by [Khadeejah Yasin]  
 Database Systems | Healthcare IT | AI Data Engineering
