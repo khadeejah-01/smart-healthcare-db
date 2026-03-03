@@ -3,7 +3,6 @@
 
 **DBMS Project** - Healthcare records system with  **ICD-10 coding**, **audit logging**, **RBAC security**, and **AI readiness**.
 
- - Complete healthcare management with
 
 ##  Features Demonstrated
 - 7-table relational schema (3NF normalized)
